@@ -20,7 +20,7 @@ spring:
   profiles: dev
   cloud:
     config:
-      uri: http://${CONFIG_SERVICE_URL}
+      uri: http://${CONFIG_SERVICE_URL}:${CONFIG_SERVICE_PORT}
 eureka:
   client:
     enabled: false
