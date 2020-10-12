@@ -23,5 +23,4 @@ spring:
       uri: http://${CONFIG_SERVICE_URL}:${CONFIG_SERVICE_PORT}
 eureka:
   client:
-    enabled: false
     register-with-eureka: false
