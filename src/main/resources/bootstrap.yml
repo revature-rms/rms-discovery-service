@@ -1,6 +1,17 @@
 spring:
   application:
     name: discovery-service
+---
+# Local Profile Configuration
+spring:
+  profiles: local
   cloud:
     config:
       uri: http://localhost:8888
+---
+# Dev Profile Configuration
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVICE_URL}:${CONFIG_SERVICE_PORT}
